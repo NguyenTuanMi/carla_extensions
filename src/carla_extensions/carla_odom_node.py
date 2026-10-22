@@ -74,7 +74,7 @@ class CarlaOdomNode(Node):
         pose.header.stamp = self.get_clock().now().to_msg()
         pose.header.frame_id = 'map'
         pose.pose.position.x = transform.location.x
-        pose.pose.position.y = -transform.location.y
+        pose.pose.position.y = transform.location.y
         pose.pose.position.z = transform.location.z
         (
             pose.pose.orientation.x,
