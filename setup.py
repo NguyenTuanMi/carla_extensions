@@ -21,7 +21,7 @@ setup(
 	zip_safe=True,
 	entry_points={
 		'console_scripts': [
-			'map_pose_publisher = carla_extensions.carla_odom_node:main',
+			'extension_publisher = carla_extensions.carla_extension_node:main',
 		],
 	},
 )
